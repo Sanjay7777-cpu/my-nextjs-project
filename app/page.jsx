@@ -51,7 +51,15 @@ export default function Home() {
             <p>
              
             </p>
-            <button className="btn btn-custom scroll-animate">Explore Us</button>
+            <a 
+  href="https://www.facebook.com/profile.php?id=61582588652588" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="btn btn-custom scroll-animate">
+    Explore Us
+  </button>
+</a>
           </div>
         </section>
 
@@ -282,13 +290,13 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  🌐{" "}
+                  📧{" "}
                   <a
-                    href="https://www.DDM.com"
+                    href="ddmagency7777@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    www.DDM.com
+                    ddmagency7777@gmail.com
                   </a>
                 </li>
               </ul>

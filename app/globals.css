@@ -1,0 +1,106 @@
+/* Full screen loader */
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+    /* pure white page */
+    flex-direction: column;
+    padding: 20px;
+    /* prevent overflow on small screens */
+}
+
+
+/* Text background with darker multi-color gradient (straight corners) */
+
+.text-bg {
+    background: linear-gradient(135deg, #b91c1c, #1e40af, #065f46);
+    /* dark gradient */
+    color: #ffffff;
+    padding: 40px 60px;
+    border-radius: 0;
+    /* straight corners */
+    box-shadow: 0 8px 20px rgba(30, 64, 175, 0.5);
+    /* darker glow effect */
+    transition: all 0.4s ease;
+    max-width: 100%;
+    /* prevent overflow on mobile */
+    box-sizing: border-box;
+}
+
+
+/* Typing text animation */
+
+.typing-text {
+    font-size: 3.5rem;
+    /* large text */
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #ffffff;
+    width: 0;
+    animation: typing 2s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+
+.highlight {
+    color: #facc15;
+    /* yellow accent */
+}
+
+
+/* Typing animation */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Cursor blink */
+
+@keyframes blink {
+    0%,
+    100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #ffffff;
+    }
+}
+
+
+/* Center text */
+
+.text-bg h1 {
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .text-bg {
+        padding: 30px 20px;
+    }
+    .typing-text {
+        font-size: 2.2rem;
+        /* smaller for tablets and mobiles */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-bg {
+        padding: 20px 15px;
+    }
+    .typing-text {
+        font-size: 1.8rem;
+        /* readable on small phones */
+    }
+}
