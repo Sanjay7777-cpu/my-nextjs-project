@@ -264,20 +264,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div>
-              <h5>Quick Links</h5>
-              <ul>
-                <li>
-                  <Link href="/about">About Us</Link>
-                </li>
-                <li>
-                  <Link href="/services">Services</Link>
-                </li>
-                <li>
-                  <Link href="/contact">Contact</Link>
-                </li>
-              </ul>
-            </div>
+        
 
             <div>
               <h5>Contact</h5>
@@ -287,6 +274,12 @@ export default function Home() {
                   📧{" "}
                   <a href="mailto:sanjaystyle8@gmail.com">
                     sanjaystyle8@gmail.com
+                  </a>
+                </li>
+                 <li>
+                  {" "}
+                  <a href="https://wa.me/9779824804400?text=Hello%2C%20I%20want%20a%20free%20consultation">
+                    9824804400
                   </a>
                 </li>
                 <li>

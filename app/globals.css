@@ -87,20 +87,28 @@
 
 @media (max-width: 768px) {
     .text-bg {
-        padding: 30px 20px;
+        padding: 25px 15px;
+        /* reduce padding slightly */
     }
     .typing-text {
-        font-size: 2.2rem;
-        /* smaller for tablets and mobiles */
+        font-size: 2rem;
+        /* smaller for tablets */
+        line-height: 1.2;
+        /* tighter line spacing */
+        word-wrap: break-word;
+        /* ensures text wraps properly */
     }
 }
 
 @media (max-width: 480px) {
     .text-bg {
-        padding: 20px 15px;
+        padding: 15px 10px;
+        /* smaller padding for very small screens */
     }
     .typing-text {
-        font-size: 1.8rem;
-        /* readable on small phones */
+        font-size: 1.5rem;
+        /* smaller font for small phones */
+        line-height: 1.2;
+        word-wrap: break-word;
     }
 }
