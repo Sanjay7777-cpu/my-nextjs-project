@@ -88,26 +88,22 @@
 @media (max-width: 768px) {
     .text-bg {
         padding: 25px 15px;
-        /* reduce padding slightly */
     }
     .typing-text {
-        font-size: 2rem;
-        /* smaller for tablets */
+        font-size: 1.8rem;
+        /* slightly smaller than desktop */
         line-height: 1.2;
-        /* tighter line spacing */
         word-wrap: break-word;
-        /* ensures text wraps properly */
     }
 }
 
 @media (max-width: 480px) {
     .text-bg {
         padding: 15px 10px;
-        /* smaller padding for very small screens */
     }
     .typing-text {
-        font-size: 1.5rem;
-        /* smaller font for small phones */
+        font-size: 1.2rem;
+        /* fits better on small phones */
         line-height: 1.2;
         word-wrap: break-word;
     }

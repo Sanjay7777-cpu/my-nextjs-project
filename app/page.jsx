@@ -5,6 +5,8 @@ import Link from "next/link";
 
 
 export default function Home() {
+
+  
   
  
 
@@ -19,6 +21,10 @@ export default function Home() {
       </head>
 
       <body>
+
+
+
+        
         {/* 🌐 Navbar */}
        <nav className="navbar">
   <div className="container">
@@ -199,9 +205,8 @@ export default function Home() {
   <div className="team-container">
     {/* Team Member 1 */}
     <div className="team-card">
-      <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=400&q=80" alt="Team Member 1" />
-      <div className="team-content">
-        <h3> Sanjay Kumar </h3>
+ <img src="/images/n11.jpg" alt="Project2" className="footer-img" />      <div className="team-content">
+        <h3> Sanjay Kumar Thakur </h3>
         <p>CEO & Founder</p>
       </div>
     </div>
@@ -212,7 +217,7 @@ export default function Home() {
      alt="Team Member Avatar" />
 
       <div className="team-content">
-        <h3> Asish Pokhrel </h3>
+        <h3> Tim David — USA </h3>
         <p>Head of Marketing</p>
       </div>
     </div>
@@ -339,7 +344,8 @@ export default function Home() {
             top: 0;
             z-index: 1000;
             border-radius: 0 0 20px 20px;
-            transition: background 0.4s ease;
+           
+            transition: background 0.4s ease, top 0.3s ease; /* smooth slide */
           }
 
           .navbar-brand {
